@@ -1,4 +1,4 @@
 TenAdic
 =======
 
-10-adic numbers
+Experiments with 10-adic numbers in Haskell.
