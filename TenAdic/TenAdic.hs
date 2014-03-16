@@ -3,8 +3,6 @@
 
 module TenAdic where
 
-import Data.Ord
-
 
 -- -------------------   DECIMAL DIGITS   ---------------------
 
@@ -49,7 +47,7 @@ asInteger (ds :~ d) = asInteger ds * 10 + toInteger (fromEnum d)
 
 -- Compare 10-adic numbers.
 instance Ord TenAdic where
-    compare = comparing asInteger
+    compare x y = asInteger x `compare` asInteger y
 instance Eq TenAdic where
     x == y = (x `compare` y) == EQ
 
