@@ -56,7 +56,7 @@ We can convert 10-adic number to a regular integer:
 
 Numeric literals work provided we give the interpreter type hint we want a `TenAdic` number:
 
-```
+```Haskell
 λ> -762241 :: TenAdic
 ...9999237759
 
