@@ -67,7 +67,7 @@ Numeric literals work provided we give the interpreter type hint we want a `TenA
 λ> -762241 :: TenAdic
 ...9999237759
 
-λ> [ x*x*x | x <- [-6..2] ] :: [TenAdic]
+λ> [ x^3 | x <- [-6..2] ] :: [TenAdic]
 [...9999784,...9999875,...9999936,...9999973,...9999992,...9999,...0000,...00001,...00008]
 ```
 
