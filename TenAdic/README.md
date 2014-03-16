@@ -66,9 +66,6 @@ Numeric literals work provided we give the interpreter type hint we want a `TenA
 ```Haskell
 λ> -762241 :: TenAdic
 ...9999237759
-
-λ> [ x^3 | x <- [-4..2] ] :: [TenAdic]
-[...9999976,...9999903,...9999912,...9999,...0000,...00001,...00008]
 ```
 
 That's it for now, have fun.
