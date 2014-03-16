@@ -68,7 +68,7 @@ tad d  = Zeros :~ d
 Zeros     *. _  = Zeros
 _         *. D0 = Zeros
 x         *. D1 = x
-Nines     *. d  = Nines :~ negD d
+Nines     *. d  = (Nines :~ negD d) + 1
 (xs :~ x) *. y  = let (c, r) = x `multD` y in xs *. y + tad c :~ r
 infixl 7  *.
 
