@@ -31,6 +31,13 @@ A few examples:
 ...000014
 ```
 
+Adding a nine to an infinite stream of nines is the same thing:
+
+```Haskell
+λ> (Nines :~ D9) == Nines
+True
+```
+
 Let's try some arithmetic (`:~` has a low operator precedence, parenthesise carefully):
 
 ```Haskell
