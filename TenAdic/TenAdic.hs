@@ -93,9 +93,6 @@ instance Num TenAdic where
                             in (xs :~ x) * ys + xs *. y + tad c :~ r
 
     -- negation
-    negate Nines = 1
-    negate Zeros = Zeros
-    negate (Zeros :~ D1) = Nines
     negate x = neg' x + 1
       where
         neg' Zeros = Nines
